@@ -44,6 +44,12 @@
             </a>
           </li>
           <li>
+            <a href="tag.php">
+              <i class="nc-icon nc-tag-content"></i>
+              <p>Add Tag</p>
+            </a>
+          </li>
+          <li>
             <a href="addproduct.php">
               <i class="nc-icon nc-tag-content"></i>
               <p>Add products</p>

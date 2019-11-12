@@ -1,10 +1,10 @@
 <?php
-// error_reporting()
+ //error_reporting(0);
 // Database connnection PDO
 class DB{
     private static function connect(){
 
-        $pdo = new PDO('mysql:host=127.0.0.1;dbname=chi-store;charaset=utf8', 'root', '');
+        $pdo = new PDO('mysql:host=127.0.0.1;dbname=chi_store;charaset=utf8', 'root', '');
         $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         return $pdo;
     }
