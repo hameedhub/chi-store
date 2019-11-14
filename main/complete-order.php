@@ -1,4 +1,13 @@
+
 <?php include_once('_header.php') ?>
+<?php 
+   if (Session::get('isLoggedIn') == false) {
+    header('Location: index.php');
+}
+
+
+?>
+
 
 <?php include_once('_nav.php') ?>
 
@@ -27,16 +36,16 @@
                                             <table>
                                                 <tr class="cart-subtotal">
                                                     <th>Name</th>
-                                                    <td>Michael Scoffield</td>
+                                                    <td><?php echo $user['first_name'] .' '. $user['last_name'] ?> </td>
                                                 </tr>
                                                 <tr class="shipping">
-                                                    <th>Phone Number</th>
-                                                    <td>08024453453</td>
+                                                    <th>Email</th>
+                                                    <td><?php echo $user['email'] ?></td>
                                                 </tr>
                                                 <tr class="shipping">
-                                                    <th>Shipping Address</th>
+                                                    <th> Address</th>
                                                     <td><textarea class="form-control" value=""
-                                                            placeholder="Enter Shipping Address">Washington DC</textarea>
+                                                            placeholder="Enter Address"></textarea>
                                                     </td>
                                                 </tr>
                                             </table>

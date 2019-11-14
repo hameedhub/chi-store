@@ -1,8 +1,10 @@
 <?php
-session_start();
 require_once('../classes/Session.php');
+Session::init();
+error_reporting(0);
 
-$user = Session::get('user');
+$user = Session::get('isLoggedIn') ? Session::get('user') : null;
+
 ?>
 
 <!doctype html>

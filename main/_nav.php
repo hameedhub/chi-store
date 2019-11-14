@@ -78,7 +78,7 @@
 								</div>
 							</div>
 						</div>
-						<?php if(!$user){ ?>
+						<?php if(!isset($user)){ ?>
 						<div class="col-sm-6">
 							<div class="right-topbar">
 								<div class="user-login">
@@ -90,15 +90,14 @@
 									</ul>
 								</div>
 
-							</div>
-						</div>
 						<?php }else{?>
 							<div class="col-sm-6">
 							<div class="right-topbar">
 							<div class="user-login">
 									<ul class="nav top-nav">
 										<li class="menu-item">
-											<a href="#"><i class="fa fa-power-off"></i>Logout</a>
+											<a href="auth/logout.php"><i class="fa fa-power-off"></i>Logout</a>
+											
 										</li>
 									</ul>
 								</div>
