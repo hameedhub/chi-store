@@ -227,6 +227,7 @@
 	<script type='text/javascript' src='js/skin-selector.js'></script>
 	<script type='text/javascript' src='script/auth.js'></script>
 	<script type='text/javascript' src='script/cart.js'></script>
+	<script type='text/javascript' src='script/req.js'></script>
 </body>
 
 </html>

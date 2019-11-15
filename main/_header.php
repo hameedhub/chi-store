@@ -1,7 +1,14 @@
 <?php
 require_once('../classes/Session.php');
 Session::init();
-error_reporting(0);
+//error_reporting();
+require_once('../classes/DB.php');
+require_once('../classes/Fabric.php');
+require_once('../classes/Product.php');
+require_once('../classes/Session.php');
+require_once('../classes/Style.php');
+require_once('../classes/Size.php');
+require_once('../classes/Tag.php');
 
 $user = Session::get('isLoggedIn') ? Session::get('user') : null;
 

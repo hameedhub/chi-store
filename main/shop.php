@@ -1,14 +1,3 @@
-<?php 
-
-require_once('../classes/DB.php');
-require_once('../classes/Fabric.php');
-require_once('../classes/Product.php');
-require_once('../classes/Session.php');
-require_once('../classes/Style.php');
-require_once('../classes/Tag.php');
-
-
-?>
 
 <?php include_once('_header.php'); ?>
 
@@ -17,7 +6,6 @@ require_once('../classes/Tag.php');
 <?php include_once('_slider.php'); ?>
 
 <?php include_once('_custom_order.php'); ?>
-
 
 
 		<div class="shop-toolbar">
